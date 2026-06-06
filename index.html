@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nadare — 雪崩リスク情報</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">nadare</a>
+      <nav class="nav">
+        <a href="#map-section">地図</a>
+        <a href="#cases-section">発生事例</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>雪崩リスク情報を、わかりやすく。</h1>
+    <p>バックカントリーに出かける前に、山域の雪崩リスクを確認しましょう。</p>
+  </div>
+
+  <main class="main">
+
+    <section class="section" id="map-section">
+      <h2 class="section-title">地域を選んでリスクを確認</h2>
+
+      <div class="region-tabs">
+        <button class="region-btn active" data-region="hokkaido">北海道</button>
+        <button class="region-btn" data-region="tohoku">東北</button>
+        <button class="region-btn" data-region="joetsu">上越</button>
+        <button class="region-btn" data-region="chubu">中部山岳</button>
+        <button class="region-btn" data-region="kinki">近畿</button>
+      </div>
+
+      <div class="map-layout">
+        <div id="leaflet-map"></div>
+
+        <div class="risk-panel">
+          <div class="risk-card">
+            <div class="risk-card-header">
+              <span class="risk-region-name" id="risk-region-name">北海道</span>
+              <span class="risk-today">本日のリスク</span>
+            </div>
+
+            <div class="risk-badge-wrap">
+              <div class="risk-badge level-2" id="risk-badge">
+                <span class="risk-num" id="risk-num">2</span>
+                <span class="risk-label" id="risk-label">やや高い</span>
+              </div>
+            </div>
+
+            <div class="risk-scale">
+              <div class="scale-seg seg-1" data-level="1">1<br><small>低い</small></div>
+              <div class="scale-seg seg-2 active" data-level="2">2<br><small>やや高い</small></div>
+              <div class="scale-seg seg-3" data-level="3">3<br><small>高い</small></div>
+              <div class="scale-seg seg-4" data-level="4">4<br><small>非常に高い</small></div>
+              <div class="scale-seg seg-5" data-level="5">5<br><small>最大</small></div>
+            </div>
+
+            <p class="risk-description" id="risk-description">
+              新雪・風雪による弱層が残存。稜線付近の急斜面では表層雪崩に注意してください。
+            </p>
+
+            <div class="weather-row">
+              <div class="weather-cell">
+                <span class="weather-label">気温</span>
+                <span class="weather-val" id="risk-temp">-5℃</span>
+              </div>
+              <div class="weather-cell">
+                <span class="weather-label">積雪</span>
+                <span class="weather-val" id="risk-snow">180cm</span>
+              </div>
+              <div class="weather-cell">
+                <span class="weather-label">新雪</span>
+                <span class="weather-val" id="risk-newsnow">+15cm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases-section">
+      <h2 class="section-title">最近の発生事例</h2>
+      <div class="cases-grid">
+        <article class="case-card">
+          <div class="case-meta">
+            <span class="case-date">2026/02/14</span>
+            <span class="case-tag surface">表層雪崩</span>
+          </div>
+          <div class="case-place">北海道 大雪山系 旭岳周辺</div>
+          <p class="case-desc">標高1800m付近の北東斜面で発生。入山者なし、被害なし。</p>
+        </article>
+        <article class="case-card">
+          <div class="case-meta">
+            <span class="case-date">2026/01/28</span>
+            <span class="case-tag full-depth">全層雪崩</span>
+          </div>
+          <div class="case-place">長野県 北アルプス 栂池周辺</div>
+          <p class="case-desc">標高1600m付近の南面斜面で発生。登山道に堆積、通行注意。</p>
+        </article>
+        <article class="case-card">
+          <div class="case-meta">
+            <span class="case-date">2026/01/15</span>
+            <span class="case-tag surface">表層雪崩</span>
+          </div>
+          <div class="case-place">新潟県 妙高山周辺</div>
+          <p class="case-desc">強風後に西面急斜面で発生。スキーエリア外、被害なし。</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>情報源: 日本雪崩ネットワーク・国土交通省</p>
+      <p>お問い合わせ: 日本山岳会バックカントリー部会</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

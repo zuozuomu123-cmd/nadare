@@ -1,0 +1,383 @@
+:root {
+  --bg: #f0f4f8;
+  --surface: #ffffff;
+  --text: #1a202c;
+  --text-muted: #718096;
+  --border: #e2e8f0;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+
+  --risk-1: #22c55e;
+  --risk-2: #eab308;
+  --risk-3: #f97316;
+  --risk-4: #ef4444;
+  --risk-5: #1f2937;
+
+  --radius: 12px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --header-h: 56px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', 'Noto Sans JP', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ── Header ── */
+.header {
+  position: sticky;
+  top: 0;
+  height: var(--header-h);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  z-index: 200;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+  color: #fff;
+  text-align: center;
+  padding: 48px 16px 40px;
+}
+
+.hero h1 {
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.hero p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* ── Main layout ── */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* ── Region tabs ── */
+.region-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.region-btn {
+  padding: 7px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 9999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.region-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.region-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ── Map + risk panel ── */
+.map-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .map-layout {
+    grid-template-columns: 1fr 300px;
+    align-items: start;
+  }
+}
+
+#leaflet-map {
+  height: 340px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 768px) {
+  #leaflet-map {
+    height: 420px;
+  }
+}
+
+/* ── Risk card ── */
+.risk-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.risk-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.risk-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.risk-region-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.risk-today {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Badge */
+.risk-badge-wrap {
+  display: flex;
+}
+
+.risk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  transition: background 0.25s;
+}
+
+.risk-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.risk-label {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.risk-badge.level-1 { background: var(--risk-1); color: #fff; }
+.risk-badge.level-2 { background: var(--risk-2); color: #1a202c; }
+.risk-badge.level-3 { background: var(--risk-3); color: #fff; }
+.risk-badge.level-4 { background: var(--risk-4); color: #fff; }
+.risk-badge.level-5 { background: var(--risk-5); color: #fff; }
+
+/* Scale bar */
+.risk-scale {
+  display: flex;
+  gap: 4px;
+}
+
+.scale-seg {
+  flex: 1;
+  text-align: center;
+  font-size: 0.65rem;
+  line-height: 1.4;
+  padding: 5px 2px;
+  border-radius: 6px;
+  background: var(--border);
+  color: var(--text-muted);
+  transition: all 0.25s;
+  cursor: default;
+}
+
+.scale-seg.active.seg-1 { background: var(--risk-1); color: #fff; font-weight: 700; }
+.scale-seg.active.seg-2 { background: var(--risk-2); color: #1a202c; font-weight: 700; }
+.scale-seg.active.seg-3 { background: var(--risk-3); color: #fff; font-weight: 700; }
+.scale-seg.active.seg-4 { background: var(--risk-4); color: #fff; font-weight: 700; }
+.scale-seg.active.seg-5 { background: var(--risk-5); color: #fff; font-weight: 700; }
+
+/* Description */
+.risk-description {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Weather row */
+.weather-row {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.weather-cell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.weather-cell + .weather-cell {
+  border-left: 1px solid var(--border);
+}
+
+.weather-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.weather-val {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ── Cases grid ── */
+.cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 600px) {
+  .cases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cases-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.case-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.case-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.case-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.case-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+.case-tag.surface {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.case-tag.full-depth {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.case-place {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.case-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* ── Footer ── */
+.footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 24px 16px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
