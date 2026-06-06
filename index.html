@@ -14,7 +14,8 @@
       <a href="#" class="logo">nadare</a>
       <nav class="nav">
         <a href="#map-section">地図</a>
-        <a href="#cases-section">発生事例</a>
+        <a href="#search-section">事例検索</a>
+        <a href="#cases-section">最新情報</a>
       </nav>
     </div>
   </header>
@@ -83,6 +84,49 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="section" id="search-section">
+      <h2 class="section-title">過去の雪崩事例を検索</h2>
+      <p class="source-note">書籍「雪崩事故事例集190」をもとにしたデータベースです。事例をクリックすると地図に表示します。</p>
+
+      <div class="search-box">
+        <div class="search-input-wrap">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="8.5" cy="8.5" r="5.5"/><line x1="13" y1="13" x2="18" y2="18"/>
+          </svg>
+          <input type="search" id="q" placeholder="山名・地名・キーワード..." autocomplete="off">
+        </div>
+        <div class="filter-row">
+          <select id="f-pref">
+            <option value="">都道府県（すべて）</option>
+            <option>北海道</option><option>青森県</option><option>岩手県</option>
+            <option>山形県</option><option>福島県</option><option>新潟県</option>
+            <option>富山県</option><option>石川県</option><option>長野県</option>
+            <option>岐阜県</option><option>静岡県</option><option>鳥取県</option>
+          </select>
+          <select id="f-type">
+            <option value="">種類（すべて）</option>
+            <option>表層雪崩</option>
+            <option>全層雪崩</option>
+            <option>吹き溜まり雪崩</option>
+          </select>
+          <select id="f-activity">
+            <option value="">行動（すべて）</option>
+            <option>冬山登山</option>
+            <option>バックカントリースキー</option>
+            <option>山岳スキー</option>
+          </select>
+          <div class="year-range">
+            <input type="number" id="f-year-from" placeholder="開始年" min="1900" max="2030">
+            <span>〜</span>
+            <input type="number" id="f-year-to"   placeholder="終了年" min="1900" max="2030">
+          </div>
+        </div>
+      </div>
+
+      <div id="result-count" class="result-count"></div>
+      <div id="result-list"  class="result-list"></div>
     </section>
 
     <section class="section" id="cases-section">

@@ -160,3 +160,124 @@ function init() {
 }
 
 init();
+
+/* ── 事例検索 ── */
+
+let allCases = [];
+let searchMarker = null;
+
+const TYPE_CLASS = {
+  '表層雪崩': 'surface',
+  '全層雪崩': 'full-depth',
+  '吹き溜まり雪崩': 'wind',
+};
+
+async function loadCases() {
+  try {
+    const res = await fetch('data/cases.json');
+    const json = await res.json();
+    allCases = json.cases;
+    renderResults(allCases);
+  } catch (e) {
+    document.getElementById('result-count').textContent = 'データの読み込みに失敗しました。';
+  }
+}
+
+function filterCases() {
+  const q        = document.getElementById('q').value.trim().toLowerCase();
+  const pref     = document.getElementById('f-pref').value;
+  const type     = document.getElementById('f-type').value;
+  const activity = document.getElementById('f-activity').value;
+  const from     = parseInt(document.getElementById('f-year-from').value) || 0;
+  const to       = parseInt(document.getElementById('f-year-to').value)   || 9999;
+
+  const results = allCases.filter(c => {
+    if (pref     && c.prefecture !== pref)      return false;
+    if (type     && c.type       !== type)      return false;
+    if (activity && c.activity   !== activity)  return false;
+    if (c.year < from || c.year > to)           return false;
+    if (q) {
+      const hay = [c.location, c.area, c.prefecture, c.description, c.activity, c.type]
+        .join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  renderResults(results);
+}
+
+function renderResults(cases) {
+  const countEl = document.getElementById('result-count');
+  const listEl  = document.getElementById('result-list');
+
+  countEl.textContent = `${cases.length} 件が見つかりました`;
+
+  if (cases.length === 0) {
+    listEl.innerHTML = '<p class="no-results">条件に一致する事例が見つかりませんでした。</p>';
+    return;
+  }
+
+  listEl.innerHTML = cases.map(c => {
+    const tagClass = TYPE_CLASS[c.type] || 'surface';
+    const deadBadge    = c.dead    > 0 ? `<span class="result-dead">死亡 ${c.dead}名</span>` : '';
+    const injuredBadge = c.injured > 0 ? `<span class="result-injured">負傷 ${c.injured}名</span>` : '';
+    return `
+      <article class="result-card"
+               data-lat="${c.lat ?? ''}" data-lng="${c.lng ?? ''}"
+               data-id="${c.id}">
+        <div class="result-meta">
+          <span class="result-date">${c.date}</span>
+          <span class="result-tag ${tagClass}">${c.type}</span>
+          ${deadBadge}${injuredBadge}
+        </div>
+        <div class="result-location">${c.prefecture} ${c.area} ${c.location}</div>
+        <div class="result-activity">${c.activity}</div>
+        <p class="result-desc">${c.description}</p>
+        <div class="result-details">
+          ${c.elevation ? `<span>標高 ${c.elevation}m</span>` : ''}
+          ${c.slope     ? `<span>傾斜 ${c.slope}°</span>`     : ''}
+          ${c.aspect    ? `<span>斜面向き ${c.aspect}</span>`  : ''}
+          ${c.trigger   ? `<span>${c.trigger}</span>`           : ''}
+          ${c.buried    ? `<span>埋没 ${c.buried}名</span>`    : ''}
+        </div>
+      </article>`;
+  }).join('');
+
+  listEl.querySelectorAll('.result-card').forEach(card => {
+    card.addEventListener('click', () => showOnMap(card));
+  });
+}
+
+function showOnMap(card) {
+  const lat = parseFloat(card.dataset.lat);
+  const lng = parseFloat(card.dataset.lng);
+  if (!lat || !lng) return;
+
+  if (searchMarker) { map.removeLayer(searchMarker); }
+
+  searchMarker = L.circleMarker([lat, lng], {
+    radius: 10, color: '#2563eb', weight: 3,
+    fillColor: '#2563eb', fillOpacity: 0.25,
+  }).addTo(map);
+
+  const loc  = card.querySelector('.result-location').textContent;
+  const desc = card.querySelector('.result-desc').textContent;
+  searchMarker.bindPopup(
+    `<div style="font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif;min-width:160px;">
+      <div style="font-weight:700;margin-bottom:4px;">${loc}</div>
+      <div style="font-size:.8em;color:#555;">${desc}</div>
+    </div>`
+  ).openPopup();
+
+  map.flyTo([lat, lng], 12, { duration: 0.7 });
+  document.getElementById('map-section').scrollIntoView({ behavior: 'smooth' });
+}
+
+/* イベント登録 */
+['q','f-pref','f-type','f-activity','f-year-from','f-year-to'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('input', filterCases);
+});
+
+loadCases();

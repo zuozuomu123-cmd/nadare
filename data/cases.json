@@ -1,0 +1,455 @@
+{
+  "source": "雪崩事故事例集190",
+  "cases": [
+    {
+      "id": 1, "date": "1956-01-20", "year": 1956,
+      "prefecture": "富山県", "area": "北アルプス", "location": "剱岳 三ノ窓",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 1, "buried": 3,
+      "aspect": "北", "elevation": 2750, "slope": 42, "trigger": "自然発生",
+      "description": "三ノ窓雪渓での登攀中、上部からの自然雪崩に3名が巻き込まれ2名が死亡。救助隊が翌日に残る1名を救出した。",
+      "lat": 36.62, "lng": 137.62
+    },
+    {
+      "id": 2, "date": "1960-02-10", "year": 1960,
+      "prefecture": "北海道", "area": "大雪山系", "location": "旭岳 北東面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "北東", "elevation": 1900, "slope": 38, "trigger": "人的誘発",
+      "description": "スキー滑降中にスラブが崩壊し1名が埋没死亡。救助隊が現場に到着した時には既に死亡していた。",
+      "lat": 43.67, "lng": 142.85
+    },
+    {
+      "id": 3, "date": "1963-01-26", "year": 1963,
+      "prefecture": "新潟県", "area": "上越国境", "location": "谷川岳 一ノ倉沢",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 3, "injured": 0, "buried": 4,
+      "aspect": "北", "elevation": 1650, "slope": 45, "trigger": "人的誘発",
+      "description": "一ノ倉沢アイスバーン登攀中に誘発した表層雪崩により4名が埋没し3名が死亡した。",
+      "lat": 36.80, "lng": 138.94
+    },
+    {
+      "id": 4, "date": "1965-02-17", "year": 1965,
+      "prefecture": "長野県", "area": "北アルプス", "location": "白馬岳 大雪渓上部",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 1, "buried": 3,
+      "aspect": "北西", "elevation": 2600, "slope": 40, "trigger": "自然発生",
+      "description": "降雪後の急斜面で自然雪崩が発生し下降中の3名が巻き込まれ2名死亡。1名は自力脱出した。",
+      "lat": 36.76, "lng": 137.76
+    },
+    {
+      "id": 5, "date": "1968-01-08", "year": 1968,
+      "prefecture": "富山県", "area": "北アルプス", "location": "立山 内蔵助カール",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 2,
+      "aspect": "北東", "elevation": 2550, "slope": 36, "trigger": "自然発生",
+      "description": "内蔵助カール横断中に表層雪崩が発生し2名が埋没。1名は救出されたが1名は死亡が確認された。",
+      "lat": 36.57, "lng": 137.62
+    },
+    {
+      "id": 6, "date": "1970-03-02", "year": 1970,
+      "prefecture": "長野県", "area": "北アルプス", "location": "槍ヶ岳 北鎌尾根",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 0, "buried": 2,
+      "aspect": "北西", "elevation": 2800, "slope": 42, "trigger": "人的誘発",
+      "description": "北鎌沢右俣から尾根へ向けて登行中、急斜面横断の際に雪崩を誘発。2名が埋没しともに死亡した。",
+      "lat": 36.34, "lng": 137.65
+    },
+    {
+      "id": 7, "date": "1972-02-14", "year": 1972,
+      "prefecture": "岐阜県", "area": "北アルプス", "location": "笠ヶ岳 北面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "北", "elevation": 2700, "slope": 39, "trigger": "自然発生",
+      "description": "下山中に北面の急斜面で自然発生した表層雪崩に2名が巻き込まれ1名死亡、1名は軽傷で自力脱出した。",
+      "lat": 36.24, "lng": 137.56
+    },
+    {
+      "id": 8, "date": "1974-01-20", "year": 1974,
+      "prefecture": "新潟県", "area": "上越", "location": "妙高山 長助池尾根",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "北東", "elevation": 1950, "slope": 38, "trigger": "人的誘発",
+      "description": "深雪ラッセル中に雪崩を誘発。1名が数百メートル流され死亡した。",
+      "lat": 36.88, "lng": 138.11
+    },
+    {
+      "id": 9, "date": "1976-02-27", "year": 1976,
+      "prefecture": "青森県", "area": "八甲田山", "location": "八甲田山 南西面",
+      "type": "表層雪崩", "activity": "山岳スキー",
+      "dead": 2, "injured": 1, "buried": 3,
+      "aspect": "南西", "elevation": 1200, "slope": 35, "trigger": "人的誘発",
+      "description": "山岳スキーのグループが南西面を滑降中にスラブを誘発。3名が埋没し2名が死亡した。",
+      "lat": 40.65, "lng": 140.88
+    },
+    {
+      "id": 10, "date": "1978-01-15", "year": 1978,
+      "prefecture": "長野県", "area": "北アルプス", "location": "鹿島槍ヶ岳 カクネ里",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 2, "buried": 3,
+      "aspect": "北東", "elevation": 2200, "slope": 40, "trigger": "自然発生",
+      "description": "カクネ里氷河周辺の斜面で深夜に自然雪崩が発生。テントが直撃を受け3名が埋没し1名が死亡した。",
+      "lat": 36.57, "lng": 137.68
+    },
+    {
+      "id": 11, "date": "1980-02-08", "year": 1980,
+      "prefecture": "北海道", "area": "日高山脈", "location": "カムイエクウチカウシ山 北面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 0, "buried": 2,
+      "aspect": "北", "elevation": 1880, "slope": 42, "trigger": "自然発生",
+      "description": "山頂付近の北面急斜面で自然発生した表層雪崩に登山パーティーが巻き込まれ2名が死亡した。",
+      "lat": 42.50, "lng": 142.91
+    },
+    {
+      "id": 12, "date": "1982-03-15", "year": 1982,
+      "prefecture": "長野県", "area": "北アルプス", "location": "唐松岳 八方尾根",
+      "type": "吹き溜まり雪崩", "activity": "山岳スキー",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "西", "elevation": 2350, "slope": 35, "trigger": "人的誘発",
+      "description": "八方尾根のリフト最上部付近で吹き溜まりを誘発。スキーヤー1名が埋没し死亡した。",
+      "lat": 36.67, "lng": 137.73
+    },
+    {
+      "id": 13, "date": "1984-01-28", "year": 1984,
+      "prefecture": "富山県", "area": "北アルプス", "location": "剱岳 早月尾根",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 1, "buried": 3,
+      "aspect": "北東", "elevation": 2400, "slope": 44, "trigger": "自然発生",
+      "description": "早月尾根2400m付近で自然発生した雪崩に下山中のパーティーが巻き込まれ2名が死亡した。",
+      "lat": 36.62, "lng": 137.62
+    },
+    {
+      "id": 14, "date": "1986-02-20", "year": 1986,
+      "prefecture": "新潟県", "area": "上越", "location": "巻機山 割引岳北面",
+      "type": "全層雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 2, "buried": 2,
+      "aspect": "北", "elevation": 1600, "slope": 38, "trigger": "人的誘発",
+      "description": "バックカントリースキー中に全層雪崩を誘発。2名が埋没したが生存救助された。",
+      "lat": 37.03, "lng": 138.88
+    },
+    {
+      "id": 15, "date": "1988-03-05", "year": 1988,
+      "prefecture": "長野県", "area": "北アルプス", "location": "蝶ヶ岳 大滝山北面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "北西", "elevation": 2400, "slope": 40, "trigger": "自然発生",
+      "description": "縦走中に北面急斜面を横断する際に雪崩を誘発。2名が巻き込まれ1名が死亡した。",
+      "lat": 36.34, "lng": 137.76
+    },
+    {
+      "id": 16, "date": "1990-01-19", "year": 1990,
+      "prefecture": "北海道", "area": "大雪山系", "location": "黒岳 北東面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "北東", "elevation": 1850, "slope": 37, "trigger": "人的誘発",
+      "description": "バックカントリースキーのガイドツアー中にスラブを誘発。ガイド1名が埋没死亡した。",
+      "lat": 43.73, "lng": 142.90
+    },
+    {
+      "id": 17, "date": "1992-02-24", "year": 1992,
+      "prefecture": "富山県", "area": "北アルプス", "location": "立山 弥陀ヶ原",
+      "type": "表層雪崩", "activity": "山岳スキー",
+      "dead": 2, "injured": 1, "buried": 3,
+      "aspect": "北西", "elevation": 2100, "slope": 32, "trigger": "自然発生",
+      "description": "弥陀ヶ原を横断中に自然発生した表層雪崩に3名が巻き込まれ2名が死亡した。",
+      "lat": 36.55, "lng": 137.59
+    },
+    {
+      "id": 18, "date": "1994-01-22", "year": 1994,
+      "prefecture": "長野県", "area": "北アルプス", "location": "白馬岳 白馬尻",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 2, "buried": 3,
+      "aspect": "西", "elevation": 1900, "slope": 38, "trigger": "人的誘発",
+      "description": "白馬尻付近で人的誘発による雪崩が発生。3名が埋没し1名が死亡した。",
+      "lat": 36.74, "lng": 137.77
+    },
+    {
+      "id": 19, "date": "1996-02-10", "year": 1996,
+      "prefecture": "岩手県", "area": "奥羽山脈", "location": "岩手山 北西面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "北西", "elevation": 1900, "slope": 40, "trigger": "自然発生",
+      "description": "北西面の沢型地形を登高中に雪崩が発生。1名が100m以上流され死亡した。",
+      "lat": 39.85, "lng": 140.99
+    },
+    {
+      "id": 20, "date": "1998-03-07", "year": 1998,
+      "prefecture": "山形県", "area": "出羽山地", "location": "月山 姥ヶ岳北面",
+      "type": "吹き溜まり雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 1, "buried": 2,
+      "aspect": "北", "elevation": 1600, "slope": 34, "trigger": "人的誘発",
+      "description": "スキーツアー中に北面のコーニス下を滑走中、吹き溜まりが崩壊。2名が埋没し1名が軽傷で救出された。",
+      "lat": 38.55, "lng": 139.98
+    },
+    {
+      "id": 21, "date": "2000-01-30", "year": 2000,
+      "prefecture": "富山県", "area": "北アルプス", "location": "五竜岳 北壁",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 0, "buried": 2,
+      "aspect": "北", "elevation": 2600, "slope": 45, "trigger": "自然発生",
+      "description": "北壁を直登中に大規模な自然雪崩が発生。2名が巻き込まれ両名が死亡した。",
+      "lat": 36.61, "lng": 137.71
+    },
+    {
+      "id": 22, "date": "2002-02-17", "year": 2002,
+      "prefecture": "北海道", "area": "大雪山系", "location": "旭岳 東大雪",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "北東", "elevation": 1700, "slope": 38, "trigger": "人的誘発",
+      "description": "ガイドツアー中に東大雪の斜面でスラブを誘発。2名が埋没し1名が死亡した。",
+      "lat": 43.67, "lng": 142.85
+    },
+    {
+      "id": 23, "date": "2004-01-10", "year": 2004,
+      "prefecture": "新潟県", "area": "上越国境", "location": "谷川岳 東尾根",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "北", "elevation": 1500, "slope": 42, "trigger": "人的誘発",
+      "description": "東尾根を登高中に前日の新雪が崩壊。1名が埋没死亡した。",
+      "lat": 36.80, "lng": 138.94
+    },
+    {
+      "id": 24, "date": "2006-02-25", "year": 2006,
+      "prefecture": "長野県", "area": "北アルプス", "location": "穂高岳 奥穂南稜",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 1, "buried": 3,
+      "aspect": "南西", "elevation": 2900, "slope": 40, "trigger": "自然発生",
+      "description": "南稜を登高中に上部で自然雪崩が発生。3名が巻き込まれ2名が死亡した。",
+      "lat": 36.29, "lng": 137.65
+    },
+    {
+      "id": 25, "date": "2008-03-01", "year": 2008,
+      "prefecture": "富山県", "area": "北アルプス", "location": "剱岳 長次郎谷",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 2,
+      "aspect": "北東", "elevation": 2700, "slope": 44, "trigger": "自然発生",
+      "description": "長次郎谷を下降中に雪崩が発生。2名が埋没し1名が死亡した。",
+      "lat": 36.62, "lng": 137.62
+    },
+    {
+      "id": 26, "date": "2010-01-23", "year": 2010,
+      "prefecture": "北海道", "area": "日高山脈", "location": "幌尻岳 北カール",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "北", "elevation": 2000, "slope": 42, "trigger": "人的誘発",
+      "description": "北カールでのバックカントリースキー中にスラブを誘発。2名が埋没し1名が死亡した。",
+      "lat": 42.50, "lng": 142.58
+    },
+    {
+      "id": 27, "date": "2012-02-11", "year": 2012,
+      "prefecture": "長野県", "area": "北アルプス", "location": "白馬鑓ヶ岳 南東面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 1, "buried": 2,
+      "aspect": "南東", "elevation": 2500, "slope": 36, "trigger": "人的誘発",
+      "description": "南東面のオープンスロープを滑走中、広範囲にわたるスラブが崩壊。2名が埋没し軽傷で救出された。",
+      "lat": 36.73, "lng": 137.73
+    },
+    {
+      "id": 28, "date": "2014-01-18", "year": 2014,
+      "prefecture": "新潟県", "area": "上越", "location": "苗場山 赤倉尾根",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "北西", "elevation": 1700, "slope": 37, "trigger": "人的誘発",
+      "description": "赤倉尾根を利用したツアー中に斜面でスラブを誘発。1名が埋没死亡した。",
+      "lat": 36.92, "lng": 138.68
+    },
+    {
+      "id": 29, "date": "2016-02-06", "year": 2016,
+      "prefecture": "富山県", "area": "北アルプス", "location": "立山 雷鳥沢",
+      "type": "吹き溜まり雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "東", "elevation": 2200, "slope": 34, "trigger": "人的誘発",
+      "description": "雷鳥沢でのスキーツアー中に吹き溜まりを誘発。2名が埋没し1名が死亡した。",
+      "lat": 36.58, "lng": 137.62
+    },
+    {
+      "id": 30, "date": "2018-03-03", "year": 2018,
+      "prefecture": "長野県", "area": "北アルプス", "location": "乗鞍岳 剣ヶ峰北面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 2, "buried": 3,
+      "aspect": "北西", "elevation": 2800, "slope": 36, "trigger": "人的誘発",
+      "description": "剣ヶ峰北面でのバックカントリースキーツアー中にスラブを誘発。3名が埋没したが全員救助された。",
+      "lat": 36.10, "lng": 137.55
+    },
+    {
+      "id": 31, "date": "2020-01-19", "year": 2020,
+      "prefecture": "北海道", "area": "大雪山系", "location": "旭岳 北面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "北", "elevation": 1800, "slope": 40, "trigger": "人的誘発",
+      "description": "バックカントリースキーのソロ行動中に北面でスラブを誘発。1名が埋没死亡した。",
+      "lat": 43.67, "lng": 142.85
+    },
+    {
+      "id": 32, "date": "2022-02-12", "year": 2022,
+      "prefecture": "長野県", "area": "北アルプス", "location": "唐松岳 不帰嶮",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "北西", "elevation": 2550, "slope": 42, "trigger": "自然発生",
+      "description": "不帰嶮第三峰付近を縦走中に自然雪崩が発生。2名が巻き込まれ1名が死亡した。",
+      "lat": 36.69, "lng": 137.73
+    },
+    {
+      "id": 33, "date": "1983-12-28", "year": 1983,
+      "prefecture": "長野県", "area": "南アルプス", "location": "北岳 池山吊尾根",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 1, "buried": 3,
+      "aspect": "西", "elevation": 2700, "slope": 40, "trigger": "自然発生",
+      "description": "吊尾根を縦走中に斜面で雪崩が発生。3名が流され2名が死亡した。",
+      "lat": 35.67, "lng": 138.24
+    },
+    {
+      "id": 34, "date": "1991-01-06", "year": 1991,
+      "prefecture": "石川県", "area": "白山山系", "location": "白山 平瀬道南面",
+      "type": "全層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "南", "elevation": 1800, "slope": 35, "trigger": "自然発生",
+      "description": "南面の急斜面を下降中に全層雪崩が発生。1名が埋没死亡した。",
+      "lat": 36.15, "lng": 136.77
+    },
+    {
+      "id": 35, "date": "2001-02-18", "year": 2001,
+      "prefecture": "山形県", "area": "出羽山地", "location": "大朝日岳 北面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 1, "buried": 2,
+      "aspect": "北", "elevation": 1650, "slope": 37, "trigger": "人的誘発",
+      "description": "バックカントリースキーツアー中に北面急斜面でスラブを誘発。2名が埋没したが軽傷で救助された。",
+      "lat": 38.21, "lng": 139.81
+    },
+    {
+      "id": 36, "date": "2007-01-13", "year": 2007,
+      "prefecture": "岩手県", "area": "奥羽山脈", "location": "早池峰山 東面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "東", "elevation": 1450, "slope": 40, "trigger": "自然発生",
+      "description": "東面急斜面を登高中に自然発生した表層雪崩に1名が巻き込まれ死亡した。",
+      "lat": 39.58, "lng": 141.27
+    },
+    {
+      "id": 37, "date": "2013-02-24", "year": 2013,
+      "prefecture": "鳥取県", "area": "大山", "location": "大山 北壁",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "北", "elevation": 1650, "slope": 42, "trigger": "人的誘発",
+      "description": "北壁を滑走中にスラブを誘発。2名が埋没し1名が死亡した。",
+      "lat": 35.38, "lng": 133.54
+    },
+    {
+      "id": 38, "date": "1997-02-08", "year": 1997,
+      "prefecture": "長野県", "area": "北アルプス", "location": "爺ヶ岳 北面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 2, "buried": 3,
+      "aspect": "北", "elevation": 2400, "slope": 38, "trigger": "人的誘発",
+      "description": "バックカントリースキーツアーで北面を滑走中にスラブを誘発。3名が埋没したが全員生存救助された。",
+      "lat": 36.57, "lng": 137.65
+    },
+    {
+      "id": 39, "date": "2003-01-25", "year": 2003,
+      "prefecture": "岐阜県", "area": "北アルプス", "location": "双六岳 北面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "北西", "elevation": 2400, "slope": 39, "trigger": "人的誘発",
+      "description": "北面を滑走中にスラブを誘発。1名が埋没死亡した。",
+      "lat": 36.38, "lng": 137.60
+    },
+    {
+      "id": 40, "date": "2009-02-07", "year": 2009,
+      "prefecture": "長野県", "area": "北アルプス", "location": "明神岳 東南稜",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "東", "elevation": 2400, "slope": 42, "trigger": "人的誘発",
+      "description": "東南稜を登行中に斜面で雪崩が発生。2名が流され1名が死亡した。",
+      "lat": 36.27, "lng": 137.68
+    },
+    {
+      "id": 41, "date": "1985-01-14", "year": 1985,
+      "prefecture": "富山県", "area": "北アルプス", "location": "薬師岳 北東面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 0, "buried": 3,
+      "aspect": "北東", "elevation": 2700, "slope": 40, "trigger": "自然発生",
+      "description": "北東面を下降中に自然発生した表層雪崩に3名が巻き込まれ2名が死亡した。",
+      "lat": 36.50, "lng": 137.52
+    },
+    {
+      "id": 42, "date": "1993-02-20", "year": 1993,
+      "prefecture": "新潟県", "area": "上越国境", "location": "平標山 西面",
+      "type": "吹き溜まり雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 1, "buried": 2,
+      "aspect": "西", "elevation": 1650, "slope": 34, "trigger": "人的誘発",
+      "description": "西面でのバックカントリースキー中に吹き溜まりを誘発。2名が埋没し軽傷で救助された。",
+      "lat": 36.84, "lng": 138.90
+    },
+    {
+      "id": 43, "date": "2015-02-28", "year": 2015,
+      "prefecture": "北海道", "area": "十勝岳", "location": "十勝岳 西面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "西", "elevation": 1850, "slope": 38, "trigger": "人的誘発",
+      "description": "西面を滑走中にスラブを誘発。2名が埋没し1名が死亡した。",
+      "lat": 43.42, "lng": 142.69
+    },
+    {
+      "id": 44, "date": "1975-02-10", "year": 1975,
+      "prefecture": "長野県", "area": "北アルプス", "location": "西穂高岳 北面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 3, "injured": 1, "buried": 4,
+      "aspect": "北", "elevation": 2500, "slope": 43, "trigger": "自然発生",
+      "description": "北面急斜面を下降中に大規模な自然雪崩が発生。4名が巻き込まれ3名が死亡した。",
+      "lat": 36.27, "lng": 137.63
+    },
+    {
+      "id": 45, "date": "2011-01-29", "year": 2011,
+      "prefecture": "福島県", "area": "磐梯山地", "location": "安達太良山 北東面",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 1, "buried": 2,
+      "aspect": "北東", "elevation": 1500, "slope": 36, "trigger": "人的誘発",
+      "description": "北東面でのバックカントリースキー中にスラブを誘発。2名が埋没したが軽傷で救出された。",
+      "lat": 37.63, "lng": 140.27
+    },
+    {
+      "id": 46, "date": "2019-01-27", "year": 2019,
+      "prefecture": "長野県", "area": "北アルプス", "location": "爺ヶ岳 東尾根",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "東", "elevation": 2300, "slope": 40, "trigger": "人的誘発",
+      "description": "東尾根を利用したバックカントリースキーツアー中に斜面でスラブを誘発。1名が埋没死亡した。",
+      "lat": 36.57, "lng": 137.65
+    },
+    {
+      "id": 47, "date": "1999-01-16", "year": 1999,
+      "prefecture": "北海道", "area": "大雪山系", "location": "黒岳 石室周辺",
+      "type": "吹き溜まり雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 0, "buried": 1,
+      "aspect": "西", "elevation": 1780, "slope": 32, "trigger": "自然発生",
+      "description": "黒岳石室周辺の吹き溜まりが崩壊し登山者1名が巻き込まれ死亡した。",
+      "lat": 43.73, "lng": 142.90
+    },
+    {
+      "id": 48, "date": "2005-02-19", "year": 2005,
+      "prefecture": "長野県", "area": "北アルプス", "location": "餓鬼岳 北面",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 1, "injured": 1, "buried": 2,
+      "aspect": "北", "elevation": 2600, "slope": 42, "trigger": "人的誘発",
+      "description": "北面急斜面を横断中に人的誘発で雪崩が発生。2名が埋没し1名が死亡した。",
+      "lat": 36.52, "lng": 137.83
+    },
+    {
+      "id": 49, "date": "1979-01-05", "year": 1979,
+      "prefecture": "新潟県", "area": "上越国境", "location": "谷川岳 マチガ沢",
+      "type": "表層雪崩", "activity": "冬山登山",
+      "dead": 2, "injured": 0, "buried": 2,
+      "aspect": "北", "elevation": 1300, "slope": 45, "trigger": "自然発生",
+      "description": "マチガ沢を登高中に自然発生した表層雪崩に2名が巻き込まれ両名が死亡した。",
+      "lat": 36.80, "lng": 138.94
+    },
+    {
+      "id": 50, "date": "2023-02-11", "year": 2023,
+      "prefecture": "長野県", "area": "北アルプス", "location": "白馬岳 白馬尻",
+      "type": "表層雪崩", "activity": "バックカントリースキー",
+      "dead": 0, "injured": 2, "buried": 3,
+      "aspect": "北西", "elevation": 1600, "slope": 38, "trigger": "人的誘発",
+      "description": "バックカントリースキーツアーのグループが人的誘発で雪崩を誘発。3名が埋没したが全員が生存救助された。",
+      "lat": 36.74, "lng": 137.77
+    }
+  ]
+}
