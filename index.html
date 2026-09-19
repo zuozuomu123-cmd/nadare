@@ -359,6 +359,18 @@
 
     .trip-name { font-weight: 600; }
 
+    .trip-badge {
+      display: inline-block;
+      font-size: 0.69rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+    .trip-badge.ski       { background: #d1fae5; color: #065f46; }
+    .trip-badge.avalanche { background: #fed7aa; color: #9a3412; }
+    .trip-badge.training  { background: #e0e7ff; color: #3730a3; }
+
     /* ── Membership ── */
     .membership-grid {
       display: grid;
@@ -700,165 +712,188 @@
     <!-- 山行記録 -->
     <section class="section" id="records">
       <h2 class="section-title">山行記録 — 2025-26シーズン</h2>
-      <p class="section-subtitle">全21件の山行を実施しました。</p>
+      <p class="section-subtitle">○山スキー山行 21件・◎雪崩講習会 1回・★入門研修 2回（全24件）</p>
       <div class="records-wrap">
         <table class="records-table">
           <thead>
             <tr>
               <th>#</th>
+              <th>種別</th>
               <th>日程</th>
-              <th>山域・山名</th>
-              <th>参加</th>
-              <th>概要</th>
+              <th>行先</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>2025/12/14</td>
-              <td><span class="trip-name">栂池高原 BC</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>8名</td>
-              <td>シーズン初山行。樹林帯を中心に滑走。良好なパウダーコンディション。</td>
+              <td><span class="trip-badge avalanche">◎講習会</span></td>
+              <td>1/10〜1/11</td>
+              <td><span class="trip-name">雪崩講習会（乗鞍スキー場）</span></td>
             </tr>
             <tr>
               <td>2</td>
-              <td>2025/12/27〜28</td>
-              <td><span class="trip-name">白馬岳 大雪渓 BC</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>6名</td>
-              <td>年末恒例の白馬岳BC。積雪豊富で快適な滑走。小屋泊。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>1/17〜1/18</td>
+              <td><span class="trip-name">余呉高原スキー場、ベルク余呉廃スキー場</span></td>
             </tr>
             <tr>
               <td>3</td>
-              <td>2026/1/10〜11</td>
-              <td><span class="trip-name">八方尾根 BC</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>10名</td>
-              <td>八方池周辺の斜面でのパウダー滑走。視界良好。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>1/31〜2/1</td>
+              <td><span class="trip-name">妙高 藤巻尾根、赤倉南東尾根</span></td>
             </tr>
             <tr>
               <td>4</td>
-              <td>2026/1/17〜18</td>
-              <td><span class="trip-name">火打山 BC</span><span class="trip-area">新潟県 頸城山塊</span></td>
-              <td>5名</td>
-              <td>高谷池ヒュッテ泊。山頂直下の斜面を滑走。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>1/31〜2/1</td>
+              <td><span class="trip-name">野沢温泉〜水尾山〜七ケ巻</span></td>
             </tr>
             <tr>
               <td>5</td>
-              <td>2026/1/24〜25</td>
-              <td><span class="trip-name">妙高山 BC</span><span class="trip-area">新潟県 頸城山塊</span></td>
-              <td>7名</td>
-              <td>燕温泉からのルートで北地獄谷方面を滑走。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>2/7〜2/8</td>
+              <td>
+                <span class="trip-name">乳頭山</span>
+                <span class="trip-area">大釜温泉〜孫六温泉〜田代平避難小屋〜乳頭温泉 往復</span>
+              </td>
             </tr>
             <tr>
               <td>6</td>
-              <td>2026/2/1</td>
-              <td><span class="trip-name">栂池 BC</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>9名</td>
-              <td>自然園方面。深雪コンディション。晴天に恵まれた。</td>
+              <td><span class="trip-badge training">★入門研修</span></td>
+              <td>2/14〜2/15</td>
+              <td><span class="trip-name">根子岳（小根子岳北西面）ほか</span></td>
             </tr>
             <tr>
               <td>7</td>
-              <td>2026/2/7〜8</td>
-              <td><span class="trip-name">焼山 BC</span><span class="trip-area">新潟県 頸城山塊</span></td>
-              <td>4名</td>
-              <td>北面の急斜面を中心に滑走。火口帯付近まで詰める。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>2/21〜2/23</td>
+              <td>
+                <span class="trip-name">犬倉山〜鎌倉森</span>
+                <span class="trip-area">網張スキー場〜犬倉山〜鎌倉森〜網張スキー場</span>
+              </td>
             </tr>
             <tr>
               <td>8</td>
-              <td>2026/2/14〜15</td>
-              <td><span class="trip-name">苗場山 BC</span><span class="trip-area">新潟県 上越</span></td>
-              <td>8名</td>
-              <td>山頂台地からの深雪滑走。広大な斜面を満喫。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>2/21〜2/23</td>
+              <td><span class="trip-name">赤禿山、白馬乗鞍</span></td>
             </tr>
             <tr>
               <td>9</td>
-              <td>2026/2/21〜22</td>
-              <td><span class="trip-name">立山 BC</span><span class="trip-area">富山県 北アルプス</span></td>
-              <td>12名</td>
-              <td>雷鳥沢周辺でのBC。快晴・良好なコンディション。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>3/7〜3/8</td>
+              <td><span class="trip-name">戸隠スキー場〜高デッキ山</span></td>
             </tr>
             <tr>
               <td>10</td>
-              <td>2026/3/1</td>
-              <td><span class="trip-name">白馬乗鞍 BC</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>6名</td>
-              <td>天狗原からの北面滑走。深雪が残り上質なパウダー。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>3/14〜3/15</td>
+              <td>
+                <span class="trip-name">山伏岳</span>
+                <span class="trip-area">泥湯温泉〜川原毛地獄P〜山伏岳 往復</span>
+              </td>
             </tr>
             <tr>
               <td>11</td>
-              <td>2026/3/7〜8</td>
-              <td><span class="trip-name">唐松岳 BC</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>5名</td>
-              <td>八方尾根から唐松岳頂上付近の滑走。剱岳展望。</td>
+              <td><span class="trip-badge training">★入門研修</span></td>
+              <td>3/14〜3/15</td>
+              <td>
+                <span class="trip-name">乗鞍岳（位ヶ原下部往復）</span>
+                <span class="trip-area">東大ヒュッテ散策</span>
+              </td>
             </tr>
             <tr>
               <td>12</td>
-              <td>2026/3/14〜15</td>
-              <td><span class="trip-name">乗鞍岳 BC</span><span class="trip-area">長野・岐阜 北アルプス</span></td>
-              <td>7名</td>
-              <td>位ヶ原から剣ヶ峰方面の広大な斜面を滑走。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>3/20〜3/22</td>
+              <td>
+                <span class="trip-name">秋田駒ヶ岳 南カルデラ</span>
+                <span class="trip-area">丸森〜三角山 往復</span>
+              </td>
             </tr>
             <tr>
               <td>13</td>
-              <td>2026/3/21</td>
-              <td><span class="trip-name">栂池 BC（春）</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>11名</td>
-              <td>春のザラメ雪。白馬岳を望みながら広大な斜面を滑走。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>3/28〜3/29</td>
+              <td><span class="trip-name">雨飾山 P2（1350m付近まで）往復、白馬乗鞍岳往復</span></td>
             </tr>
             <tr>
               <td>14</td>
-              <td>2026/3/28〜29</td>
-              <td><span class="trip-name">焼山 BC（春）</span><span class="trip-area">新潟県 頸城山塊</span></td>
-              <td>4名</td>
-              <td>残雪期。火口帯付近まで詰めて滑走。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>4/11〜4/12</td>
+              <td><span class="trip-name">月山・石跳沢</span></td>
             </tr>
             <tr>
               <td>15</td>
-              <td>2026/4/4〜6</td>
-              <td><span class="trip-name">立山 BC（春）</span><span class="trip-area">富山県 北アルプス</span></td>
-              <td>14名</td>
-              <td>春立山。内蔵助カール・剱岳展望の大滑走。今季最多参加。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>4/18〜4/20</td>
+              <td>
+                <span class="trip-name">岩木山 嶽ルート往復</span>
+                <span class="trip-area">八甲田 仙人岱〜大岳〜酸ヶ湯 / 睡蓮沼〜硫黄岳 往復</span>
+              </td>
             </tr>
             <tr>
               <td>16</td>
-              <td>2026/4/11〜12</td>
-              <td><span class="trip-name">白馬岳 BC（春）</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>8名</td>
-              <td>白馬尻から大雪渓へ。ザラメ雪快適、視界良好。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>4/18〜4/19</td>
+              <td><span class="trip-name">至仏山 ワル沢</span></td>
             </tr>
             <tr>
               <td>17</td>
-              <td>2026/4/18〜19</td>
-              <td><span class="trip-name">針ノ木岳 BC</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>6名</td>
-              <td>針ノ木雪渓からの大斜面滑走。絶景の稜線歩き。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>4/19</td>
+              <td><span class="trip-name">至仏山 ワル沢（別パーティー）</span></td>
             </tr>
             <tr>
               <td>18</td>
-              <td>2026/4/25〜26</td>
-              <td><span class="trip-name">栂池 BC（春山）</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>9名</td>
-              <td>春の陽気の中、シーズン後半の定番エリアを滑走。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>4/25</td>
+              <td><span class="trip-name">鍋倉山</span></td>
             </tr>
             <tr>
               <td>19</td>
-              <td>2026/5/2〜4</td>
-              <td><span class="trip-name">白山 BC（GW）</span><span class="trip-area">石川・岐阜 白山山系</span></td>
-              <td>7名</td>
-              <td>GW恒例の白山。翠ヶ池周辺の広大な斜面を満喫。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>4/26〜4/29</td>
+              <td>
+                <span class="trip-name">鳥海山</span>
+                <span class="trip-area">湯ノ台〜滝ノ小屋経由拝復岳手前 往復 / 吹浦・大平台〜小浜小屋1440m付近 往復 / 鉾立〜小浜小屋経由文殊岳 往復</span>
+              </td>
             </tr>
             <tr>
               <td>20</td>
-              <td>2026/5/9〜10</td>
-              <td><span class="trip-name">月山 BC</span><span class="trip-area">山形県 出羽山地</span></td>
-              <td>8名</td>
-              <td>残雪豊富な月山。姥ヶ岳周辺でのBC。東北遠征。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>4/29</td>
+              <td><span class="trip-name">至仏山 ワル沢</span></td>
             </tr>
             <tr>
               <td>21</td>
-              <td>2026/5/23〜24</td>
-              <td><span class="trip-name">白馬岳 残雪期 BC</span><span class="trip-area">長野県 北アルプス</span></td>
-              <td>5名</td>
-              <td>シーズン締めくくりの白馬。残雪を楽しんで2025-26シーズン終了。</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>5/2〜5/6</td>
+              <td>
+                <span class="trip-name">鳥海山</span>
+                <span class="trip-area">湯ノ台/月山森 / 吹浦・小浜小屋・鳥海湖 / 秡川・七高山</span>
+              </td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>5/2</td>
+              <td><span class="trip-name">蓮華岳 大沢左俣</span></td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>5/16</td>
+              <td><span class="trip-name">乗鞍岳 位ヶ原山荘〜頂上 往復</span></td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td><span class="trip-badge ski">○山行</span></td>
+              <td>5/29〜5/31</td>
+              <td>
+                <span class="trip-name">立山</span>
+                <span class="trip-area">雄山登山、御山谷 往復、剣沢</span>
+              </td>
             </tr>
           </tbody>
         </table>
